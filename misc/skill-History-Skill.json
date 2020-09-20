@@ -1,0 +1,1542 @@
+{
+  "intents": [
+    {
+      "intent": "Cancel",
+      "examples": [
+        {
+          "text": "cancel that"
+        },
+        {
+          "text": "cancel the request"
+        },
+        {
+          "text": "forget it"
+        },
+        {
+          "text": "i changed my mind"
+        },
+        {
+          "text": "i don't want a table anymore anymore"
+        },
+        {
+          "text": "nevermind"
+        },
+        {
+          "text": "never mind"
+        }
+      ],
+      "description": "Cancel the current request"
+    },
+    {
+      "intent": "define",
+      "examples": [
+        {
+          "text": "1002 blue and white porcelain"
+        },
+        {
+          "text": "can you define this"
+        },
+        {
+          "text": "define"
+        },
+        {
+          "text": "i don't know what this word means"
+        },
+        {
+          "text": "what does this mean"
+        },
+        {
+          "text": "what is a"
+        },
+        {
+          "text": "what is an"
+        },
+        {
+          "text": "what is the meaning of this"
+        }
+      ],
+      "description": "defining words (literally)"
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hello Agent"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey there all"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Hi advisor"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "hiya"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "How r u?"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "yo"
+        },
+        {
+          "text": "You there"
+        }
+      ],
+      "description": "Greetings"
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "arrivederci"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "so long"
+        }
+      ],
+      "description": "Good byes"
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "can you assist me"
+        },
+        {
+          "text": "can you help"
+        },
+        {
+          "text": "help"
+        },
+        {
+          "text": "help me"
+        },
+        {
+          "text": "help me decide"
+        },
+        {
+          "text": "i need assistance"
+        },
+        {
+          "text": "what can i do"
+        },
+        {
+          "text": "what can i say"
+        }
+      ],
+      "description": "Ask for help"
+    },
+    {
+      "intent": "how_do_you_know",
+      "examples": [
+        {
+          "text": "how can we be sure"
+        },
+        {
+          "text": "how did historians find out"
+        },
+        {
+          "text": "how do archaeologist know where to dig"
+        },
+        {
+          "text": "how do archaeologists find sites"
+        },
+        {
+          "text": "how do archaeologists find the age of an artefact"
+        },
+        {
+          "text": "how do you know"
+        },
+        {
+          "text": "how do you know what century"
+        },
+        {
+          "text": "how to determine age"
+        },
+        {
+          "text": "how to find the year"
+        },
+        {
+          "text": "how to find what century"
+        },
+        {
+          "text": "how to get the year"
+        },
+        {
+          "text": "who was involved in"
+        }
+      ],
+      "description": "questions about provenance, historiography"
+    },
+    {
+      "intent": "how_much",
+      "examples": [
+        {
+          "text": "is this for sale"
+        },
+        {
+          "text": "where can i buy this"
+        },
+        {
+          "text": "where can i get one of these"
+        },
+        {
+          "text": "where to buy this"
+        }
+      ],
+      "description": "questions about price/purchasing"
+    },
+    {
+      "intent": "more_information",
+      "examples": [
+        {
+          "text": "can you tell me more about this"
+        },
+        {
+          "text": "i want more information"
+        },
+        {
+          "text": "where can i find out more"
+        },
+        {
+          "text": "why are there"
+        },
+        {
+          "text": "why is this"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sang_nila_utama_lion",
+      "examples": [
+        {
+          "text": "did sang nila utama really see a lion"
+        },
+        {
+          "text": "was it a lion or a tiger"
+        },
+        {
+          "text": "what animal did sang nila utama see"
+        },
+        {
+          "text": "why does the story say it was a lion"
+        }
+      ],
+      "description": "was it really a lion"
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "i appreciate it"
+        },
+        {
+          "text": "many thanks"
+        },
+        {
+          "text": "much appreciated"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thank you very much"
+        },
+        {
+          "text": "that's nice of you"
+        },
+        {
+          "text": "thx"
+        }
+      ],
+      "description": "Thanks"
+    },
+    {
+      "intent": "what_is_the_story_of_malay_annals",
+      "examples": [
+        {
+          "text": "badang"
+        },
+        {
+          "text": "fable"
+        },
+        {
+          "text": "tale of"
+        },
+        {
+          "text": "tell me the fable of"
+        },
+        {
+          "text": "what is the story in sejarah melayu"
+        },
+        {
+          "text": "what is the story of"
+        },
+        {
+          "text": "what is the tale in the malay annals"
+        },
+        {
+          "text": "what's the story of"
+        }
+      ],
+      "description": "Questions relating to stories in Sejarah Melayu"
+    },
+    {
+      "intent": "where_arch",
+      "examples": [
+        {
+          "text": "list all excavations sites in singapore"
+        },
+        {
+          "text": "list of excavation sites singapore"
+        },
+        {
+          "text": "list of places where archaeology conducted singapore"
+        },
+        {
+          "text": "list of places where digging done singapore"
+        },
+        {
+          "text": "where has archaeology been conducted in singapore"
+        },
+        {
+          "text": "which parts of singapore have been excavated"
+        }
+      ],
+      "description": "where has archaeology been conducted"
+    },
+    {
+      "intent": "who_is",
+      "examples": [
+        {
+          "text": "who"
+        },
+        {
+          "text": "who is"
+        },
+        {
+          "text": "who is this person"
+        }
+      ],
+      "description": "asking who various historical figures are"
+    },
+    {
+      "intent": "who_owns",
+      "examples": [
+        {
+          "text": "does the government own these items"
+        },
+        {
+          "text": "does the museum own these artefacts"
+        },
+        {
+          "text": "does this belong to the museum"
+        },
+        {
+          "text": "ownership"
+        },
+        {
+          "text": "who does this belong to"
+        },
+        {
+          "text": "who has the rights to the item"
+        },
+        {
+          "text": "who owns the items"
+        }
+      ],
+      "description": "Questions about value of artificats"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "1001",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1001",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Abraham",
+          "synonyms": [
+            "Abraham Ortelius",
+            "Ortelius "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "atlas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cartographer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "flemish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mermaids",
+          "synonyms": [
+            "imaginary",
+            "monsters",
+            "sea creatures"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Theatrum Orbis Terrarum",
+          "synonyms": [
+            "Theatre of the World"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "1002",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1002",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "blue and white Chunping porcelain vase",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Blue and white porcelain",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dehua whiteware dish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Green celadon crackled glaze bowl",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "1006",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Wang Dayuan",
+          "synonyms": [
+            "Dayuan",
+            "Huan chang",
+            "Huan-chang",
+            "Huanzhang"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "archaeology",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "archaeology",
+          "synonyms": [
+            "digging",
+            "excavation"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "archaeology site",
+          "synonyms": [
+            "excavation site"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "artificats",
+          "synonyms": [
+            "items",
+            "relics",
+            "stuff",
+            "treasures"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "archaeology_locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Fort Canning",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fort Canning Park",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Town Hall",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Victoria Hall",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Victoria Town Hall",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "definitely not",
+            "don't think so",
+            "dont think so",
+            "i think not",
+            "nope",
+            "not at this time",
+            "not now"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "definitely",
+            "go for it",
+            "let's do it",
+            "ok",
+            "please",
+            "sure",
+            "why not",
+            "yeah",
+            "yep",
+            "yes",
+            "you bet",
+            "you betcha"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sejarah_melayu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Badang",
+          "synonyms": [
+            "Sadim Sani"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hang Nadim",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sang Nila Utama",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sulalatus Salatin",
+          "synonyms": [
+            "Genealogy of Kings",
+            "Malay Annals",
+            "Sejarah Melayu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sultan iskandar shah",
+          "synonyms": [
+            "iskandar",
+            "parameswara"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "slack",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "slack",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "zip_code",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "US Zip",
+          "patterns": [
+            "(\\b|\\s)\\d{5}(\\b|\\s)"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "skill": {
+      "counts": {
+        "intents": 14,
+        "entities": 12,
+        "dialog_nodes": 31
+      }
+    },
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/e0415389%40u.nus.edu_dev/default/assistant_discovery_integration_cloud_function_action.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "sejarah_melayu_webhook",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "item_index": "malay_annals",
+            "assistant_message": "<? input.text ?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sejarah_melayu || #what_is_the_story_of_malay_annals || #sang_nila_utama_lion",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1600097373679",
+      "previous_sibling": "node_3_1600505507302"
+    },
+    {
+      "type": "standard",
+      "title": "1002",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "item_index": 1002,
+            "assistant_message": "<? input.text ?>"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@1002 || @sys-number:1002",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1600455850002",
+      "previous_sibling": "node_4_1600071104393"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "So long",
+            "See you later, alligator ",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Goodbye",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_12_1468329566917",
+      "previous_sibling": "node_9_1600435513683"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "sup",
+            "k"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#General_Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_13_1502484041694",
+      "previous_sibling": "Opening"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "You're welcome. ",
+            "Glad I could help!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Thanks",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1468243505617",
+      "previous_sibling": "node_12_1468329566917"
+    },
+    {
+      "type": "standard",
+      "title": "archaeology_webhook",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "item_index": "archaeology",
+            "assistant_message": "<? input.text ?>"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#who_owns || #where_arch || #how_do_you_know || @archaeology || @archaeology_locations",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1600078422166",
+      "previous_sibling": "node_10_1600097373679"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello",
+            "Hi there",
+            "Hi. How can I help"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1502484041694",
+      "disabled": true,
+      "metadata": {},
+      "dialog_node": "node_28_1522448362216"
+    },
+    {
+      "type": "standard",
+      "title": "sejarah_melayu",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#what_is_the_story_of_malay_annals || #sang_nila_utama_lion",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1600505507302",
+      "previous_sibling": "node_1_1600455850002"
+    },
+    {
+      "type": "standard",
+      "title": "1001",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@1001",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1600071104393",
+      "previous_sibling": "node_13_1502484041694"
+    },
+    {
+      "type": "standard",
+      "title": "1006",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#who_is || @1006",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1600106433316",
+      "previous_sibling": "node_2_1600078422166"
+    },
+    {
+      "type": "standard",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "assistant_message": "<? input.text ?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1600435513683",
+      "previous_sibling": "node_5_1600106433316"
+    },
+    {
+      "type": "standard",
+      "title": "Opening",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ask a question!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "no_reservation": true
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Opening"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Abraham Ortelius was a Brabantian cartographer, geographer, and cosmographer, conventionally recognized as the creator of the first modern atlas, the Theatrum Orbis Terrarum (Theatre of the World). Ortelius is often considered one of the founders of the Netherlandish school of cartography and one of the most notable figures of the school in its golden age (approximately 1570s–1670s). The publication of his atlas in 1570 is often considered as the official beginning of the Golden Age of Netherlandish cartography. He is also believed to be the first person to imagine that the continents were joined before drifting to their present positions."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "conditions": "#who_is && @1001:Abraham",
+      "dialog_node": "response_10_1600096619763",
+      "previous_sibling": "response_1_1600073274739"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Medieval and Renaissance cartographers drew on myths, literature, and the scientific knowledge of the time to create these beasts. In medieval times, monsters appear on two kinds of maps: mappaemundi, or small schematic maps of the world, and nautical charts. But the nautical charts with monsters probably weren't the ones taken to sea and actually used for navigation. Instead, they were more ornate versions produced for display by nobles.Some sea monsters probably served a purely decorative function, a chance for the cartographer to show off his artistry. Others were meant to send a message: perhaps to warn sailors of possible dangers, or in some cases to scare off fisherman and other seafarers from competing nations.Sea monsters started to fall out of favor toward the end of the 16th century as the age of exploration wore on. \"People began to view maps as accurate scientific things that didn't need decoration.\" As sea monsters disappeared from maps, more and more ships began to appear on them, signaling that humans were finally conquering the seas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "conditions": "#more_information && @1001:mermaids",
+      "dialog_node": "response_10_1600097185579",
+      "previous_sibling": "response_10_1600096619763"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Confidence level: <? $webhook_result_1.passages[0].passage_score ?><? $webhook_result_1.passages[0].passage_text ?>Confidence level:<? $webhook_result_1.passages[1].passage_score ?><? $webhook_result_1.passages[1].passage_text ?>Confidence level:<? $webhook_result_1.passages[2].passage_score ?><? $webhook_result_1.passages[2].passage_text ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "personal_api": {
+          "text": [
+            {
+              "text": "<? $webhook_result_1.results[0].text ?>",
+              "subtitle": "<? $webhook_result_1.results[0].subtitle ?>",
+              "confidence": "<? $webhook_result_1.results[0].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_1.results[1].text ?>",
+              "subtitle": "<? $webhook_result_1.results[1].subtitle ?>",
+              "confidence": "<? $webhook_result_1.results[1].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_1.results[2].text ?>",
+              "subtitle": "<? $webhook_result_1.results[2].subtitle ?>",
+              "confidence": "<? $webhook_result_1.results[2].result_metadata.confidence ?>"
+            }
+          ],
+          "passages": [
+            {
+              "passage_text": "<? $webhook_result_1.passages[0].passage_text ?>",
+              "passage_score": "<? $webhook_result_1.passages[0].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_1.passages[1].passage_text ?>",
+              "passage_score": "<? $webhook_result_1.passages[1].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_1.passages[2].passage_text ?>",
+              "passage_score": "<? $webhook_result_1.passages[2].passage_score ?>"
+            }
+          ]
+        }
+      },
+      "parent": "node_9_1600435513683",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_10_1600435542178"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Lions have never lived in Singapore (not even Asiatic lions), and the beast seen by Sang Nila Utama was therefore suggested to be a tiger, most likely to be the Malayan tiger. Another candidate for the beast mentioned in the Malay Annals is mythical beast called janggi told in Minangkabau legends as a guardian of gold mines. Dark red hair called rambut janggi, said to be of this mythical beast but probably actually from orangutans, adorn lances that were kept by the Minangkabaus as heirlooms. Regardless of the exact species of animal, the symbolism of the Asiatic lion as an emblem of power was strongly established through the spread of Buddhist culture in Southeast Asia. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "#sang_nila_utama_lion &&  @sejarah_melayu:(Sang Nila Utama)",
+      "dialog_node": "response_10_1600505653101",
+      "previous_sibling": "response_6_1600505640690"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "An Atlas is a book of maps or charts."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "conditions": "#define && @1001:atlas",
+      "dialog_node": "response_1_1600072376099",
+      "previous_sibling": "response_5_1600072394219"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A cartographer is a person who draws or produces maps."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "conditions": "#define && @1001:cartographer",
+      "dialog_node": "response_1_1600073274739",
+      "previous_sibling": "response_1_1600072376099"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Abraham Ortelius's map of Southeast Asia"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "conditions": "@1001:1001",
+      "dialog_node": "response_1_1600447786710",
+      "previous_sibling": "response_10_1600097185579"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "slack": [
+          {
+            "blocks": [
+              {
+                "text": {
+                  "text": "Hello, Assistant to the Regional Manager Dwight! *Michael Scott* wants to know where you'd like to take the Paper Company investors to dinner tonight.\n\n *Please select a restaurant:*",
+                  "type": "mrkdwn"
+                },
+                "type": "section"
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "text": {
+                  "text": "*Farmhouse Thai Cuisine*\n:star::star::star::star: 1528 reviews\n They do have some vegan options, like the roti and curry, plus they have a ton of salad stuff and noodles can be ordered without meat!! They have something for everyone here",
+                  "type": "mrkdwn"
+                },
+                "type": "section",
+                "accessory": {
+                  "type": "image",
+                  "alt_text": "alt text for image",
+                  "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/c7ed05m9lC2EmA3Aruue7A/o.jpg"
+                }
+              },
+              {
+                "text": {
+                  "text": "*Kin Khao*\n:star::star::star::star: 1638 reviews\n The sticky rice also goes wonderfully with the caramelized pork belly, which is absolutely melt-in-your-mouth and so soft.",
+                  "type": "mrkdwn"
+                },
+                "type": "section",
+                "accessory": {
+                  "type": "image",
+                  "alt_text": "alt text for image",
+                  "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/korel-1YjNtFtJlMTaC26A/o.jpg"
+                }
+              },
+              {
+                "text": {
+                  "text": "*Ler Ros*\n:star::star::star::star: 2082 reviews\n I would really recommend the  Yum Koh Moo Yang - Spicy lime dressing and roasted quick marinated pork shoulder, basil leaves, chili & rice powder.",
+                  "type": "mrkdwn"
+                },
+                "type": "section",
+                "accessory": {
+                  "type": "image",
+                  "alt_text": "alt text for image",
+                  "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DawwNigKJ2ckPeDeDM7jAg/o.jpg"
+                }
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "actions",
+                "elements": [
+                  {
+                    "text": {
+                      "text": "Farmhouse",
+                      "type": "plain_text",
+                      "emoji": true
+                    },
+                    "type": "button",
+                    "value": "click_me_123"
+                  },
+                  {
+                    "text": {
+                      "text": "Kin Khao",
+                      "type": "plain_text",
+                      "emoji": true
+                    },
+                    "type": "button",
+                    "value": "click_me_123"
+                  },
+                  {
+                    "text": {
+                      "text": "Ler Ros",
+                      "type": "plain_text",
+                      "emoji": true
+                    },
+                    "type": "button",
+                    "value": "click_me_123"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1600435513683",
+      "conditions": "",
+      "dialog_node": "response_3_1600436394309",
+      "previous_sibling": "response_10_1600435542178"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_1_1600455850002",
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1600455934453",
+      "previous_sibling": "response_7_1600455932747"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "According to the Malay Annals, the emporium of Singapore was founded in 1299 by Sang Nila Utama. While hunting on Bintan, he spotted a stag and started chasing it up a small hill but, when he reached the top, the stag vanished. He then came to a very large rock and decided to climb it. When he stood on top of the rock, he looked across the sea and saw another island with a white sandy beach which had the appearance of a white sheet of cloth. Asking his chief minister what island it was, he was told that it was the island of Temasek now known as Singapore . While his ship was out at sea, a great storm erupted and the ship was tossed about in the huge waves and began to take in water. To prevent it from sinking, his men threw all the heavy things on board into the sea to lighten the ship. But still water kept entering the ship. On the advice of the ship's captain, he threw his crown overboard as a gift to the sea. At once, the storm died down and he reached Temasek safely. He landed safely on the beach, and went to hunt wild animals near the river mouth on a patch of open ground, now referred to as the Padang. Suddenly, he saw a strange animal with a red body, black head and a white breast, which swiftly disappeared into the jungle. Impressed by this beast's beauty, he asked his chief minister Demang Lebar Daun what animal it was and was informed that it was a lion. Pleased with this as he believed it to be a good omen, he decided to build his new city in Temasek. He and his men stayed on the island and founded a city, renaming the island to Singapura, which in Sanskrit means \"Lion City\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "@sejarah_melayu:(Sang Nila Utama)",
+      "dialog_node": "response_4_1600505580944"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Malay Annals (Malay: Sejarah Melayu, Jawi: سجاره ملايو), originally titled Sulalatus Salatin (Genealogy of Kings), is a literary work that gives a romanticised history of the origin, evolution and demise of the great Malay maritime empire, the Malacca Sultanate. The work which was composed sometime between 15th and 16th centuries is considered one of the finest literary and historical works in the Malay language."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "#define && @sejarah_melayu:(Sulalatus Salatin)",
+      "dialog_node": "response_4_1600505622912",
+      "previous_sibling": "response_6_1600505610893"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Check this out for more information about the Ortelius's atlas:http://www.columbia.edu/itc/mealac/pritchett/00maplinks/mughal/orteliusmaps/ortelius1603/ortelius1603.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600071104393",
+      "context": {},
+      "conditions": "#more_information && @1001:atlas",
+      "dialog_node": "response_5_1600072394219"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Over several days while out fishing for his master, Badang noticed that the fishes he had trapped were reduced to bones. He decided to camp out to catch the thief, and discovered that it was a water spirit.Steeling himself, Badang confronted the spectre, who offered to grant Badang anything he wished if he were to let it go. Badang agreed and chose great strength. The process was nothing short of icky. Badang had to consume whatever the spirit threw up, which he did.Returning to his master's land, Badang cleared the jungle in record time. Impressed and indebted, his master set Badang free from the bondage of slavery. Badang then travelled to Singapura, a thriving kingdom, where he demonstrated his strength to its king by launching a large boat into the water on his own, when 3,000 men had earlier failed. For this, the king appointed him the special post of court champion, or hulubalang. Later, Badang bested the champion of a rival kingdom in South India when he hurled a heavy rock from the king's palace to the mouth of the Singapore river. The rock is today known as the Singapore Stone, fragments of which are on display at the National Museum of Singapore."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "@sejarah_melayu:(Hang Nadim)",
+      "dialog_node": "response_6_1600505610893",
+      "previous_sibling": "response_7_1600505599957"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sang Nila Utama was a Srivijayan prince from Palembang and is the founder of the Kingdom of Singapura in 1299."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "#who_is && @sejarah_melayu:(Sang Nila Utama)",
+      "dialog_node": "response_6_1600505640690",
+      "previous_sibling": "response_4_1600505622912"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Confidence level: <? $webhook_result_2.passages[0].passage_score ?>\n<? $webhook_result_2.passages[0].passage_text ?>\nConfidence level:<? $webhook_result_2.passages[1].passage_score ?>\n<? $webhook_result_2.passages[1].passage_text ?>\nConfidence level:<? $webhook_result_2.passages[2].passage_score ?>\n<? $webhook_result_2.passages[2].passage_text ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "personal_api": {
+          "text": [
+            {
+              "text": "<? $webhook_result_2.results[0].text ?>",
+              "subtitle": "<? $webhook_result_2.results[0].subtitle ?>",
+              "confidence": "<? $webhook_result_2.results[0].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_2.results[1].text ?>",
+              "subtitle": "<? $webhook_result_2.results[1].subtitle ?>",
+              "confidence": "<? $webhook_result_2.results[1].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_2.results[2].text ?>",
+              "subtitle": "<? $webhook_result_2.results[2].subtitle ?>",
+              "confidence": "<? $webhook_result_2.results[2].result_metadata.confidence ?>"
+            }
+          ],
+          "passages": [
+            {
+              "passage_text": "<? $webhook_result_2.passages[0].passage_text ?>",
+              "passage_score": "<? $webhook_result_2.passages[0].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_2.passages[1].passage_text ?>",
+              "passage_score": "<? $webhook_result_2.passages[1].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_2.passages[2].passage_text ?>",
+              "passage_score": "<? $webhook_result_2.passages[2].passage_score ?>"
+            }
+          ]
+        }
+      },
+      "parent": "node_10_1600097373679",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_7_1600454057334"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Confidence level: <? $webhook_result_3.passages[0].passage_score ?>\n<? $webhook_result_3.passages[0].passage_text ?>\nConfidence level:<? $webhook_result_3.passages[1].passage_score ?>\n<? $webhook_result_3.passages[1].passage_text ?>\nConfidence level:<? $webhook_result_3.passages[2].passage_score ?>\n<? $webhook_result_3.passages[2].passage_text ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1600455850002",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_7_1600455932747"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Badang is a legendary Southeast Asian strongman from the Malay world, active in the court of the Raja Sri Rana Vikrama of the Kingdom of Singapura. He is associated with several geographical locations and historical artefacts, most notably the Singapore Stone."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1600505507302",
+      "conditions": "@sejarah_melayu:Badang",
+      "dialog_node": "response_7_1600505599957",
+      "previous_sibling": "response_4_1600505580944"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The first Chinese trader to write about Southeast Asia.  He was born around 1311 in Nanchang, known in earlier times as Hongzhou, which was a prosperous port in Jiangxi Province during the Song Dynasty. The town is not far from Jingdezhen, the great centre of porcelain production. Nanchang may have been a centre of porcelain trade in the Yuan period. In 1349, Wang’s composition Dao yi zhi lue (“Description of the Barbarians of the Isles”) was incorporated into a local gazetteer, Qingyuan xuzhi, \"A Continuation of the History and Topography of Quanzhou\", by Wu Jian. In a postscript to his book, Wang wrote: “I ‘attached’ to a boat when I was young to go for sea-travel”. This sentiment seems to describe a trader who booked space on a ship for himself and his goods. Wang made two voyages, one from 1330 to 1334, and the other from 1337 to 1339. It is also believed that he lived in Quanzhou, Fujian Province, for some time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1600106433316",
+      "conditions": "@1006:(Wang Dayuan)",
+      "dialog_node": "response_8_1600106445322"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Confidence level: <? $webhook_result_4.passages[0].passage_score ?>\n<? $webhook_result_4.passages[0].passage_text ?>\nConfidence level:<? $webhook_result_4.passages[1].passage_score ?>\n<? $webhook_result_4.passages[1].passage_text ?>\nConfidence level:<? $webhook_result_4.passages[2].passage_score ?>\n<? $webhook_result_4.passages[2].passage_text ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "personal_api": {
+          "text": [
+            {
+              "text": "<? $webhook_result_4.results[0].text ?>",
+              "subtitle": "<? $webhook_result_4.results[0].subtitle ?>",
+              "confidence": "<? $webhook_result_4.results[0].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_4.results[1].text ?>",
+              "subtitle": "<? $webhook_result_4.results[1].subtitle ?>",
+              "confidence": "<? $webhook_result_4.results[1].result_metadata.confidence ?>"
+            },
+            {
+              "text": "<? $webhook_result_4.results[2].text ?>",
+              "subtitle": "<? $webhook_result_4.results[2].subtitle ?>",
+              "confidence": "<? $webhook_result_4.results[2].result_metadata.confidence ?>"
+            }
+          ],
+          "passages": [
+            {
+              "passage_text": "<? $webhook_result_4.passages[0].passage_text ?>",
+              "passage_score": "<? $webhook_result_4.passages[0].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_4.passages[1].passage_text ?>",
+              "passage_score": "<? $webhook_result_4.passages[1].passage_score ?>"
+            },
+            {
+              "passage_text": "<? $webhook_result_4.passages[2].passage_text ?>",
+              "passage_score": "<? $webhook_result_4.passages[2].passage_score ?>"
+            }
+          ]
+        }
+      },
+      "parent": "node_2_1600078422166",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_8_1600457180453"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "malay annals"
+    },
+    {
+      "text": "when was malay annals written"
+    },
+    {
+      "text": "who wrote malay annals"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": false,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above."
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "History Skill",
+  "language": "en",
+  "description": "History skill, built on customer sample skill template"
+}

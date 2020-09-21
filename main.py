@@ -18,6 +18,9 @@ def validation():
     print(f"content text = {content_text} ")
     print(f"content response_url = {content_response_url}")
 
+    if request.form.get('api_app_id') != os.environ['SLACK_APP_ID']:
+        return "looks like you got the wrong bot pal!", 400
+
     thr = threading.Thread(
         target=watson_call,
         args=(content_text, content_response_url)

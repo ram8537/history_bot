@@ -151,3 +151,4 @@ cython_debug/
 
 env_variables.yaml
 test.py
+discovery_api/api_helper_functions/

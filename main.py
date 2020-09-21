@@ -1,5 +1,6 @@
 import os
-import json, re
+import json
+import re
 from flask import Flask, request, jsonify
 import requests
 import threading
@@ -46,191 +47,148 @@ def watson_call(content_text, content_response_url):
         }).get_result()
 
     try:
-        filtered_response = response['output']['user_defined']['personal_api']
+        filtered_response = response['output']['user_defined']['personal_api']['watson_response']
         passage_list = filtered_response['passages']
-        text_list = filtered_response['text'][:1000]
-
-        print(passage_list[0]['passage_score'])
-
-        def format_message(passage_list, text_list):
-            message = {
-                "blocks": [
+        results_list = filtered_response['results']
+        print("passage_list")
+        print(passage_list)
+        print("results_list")
+        print(results_list)
+        
+        def slack_formatter_score(n):
+            try:
+                score = n['passage_score']
+            except KeyError:
+                score = n['result_metadata']['confidence']
+            slack_component_score = {
+                "type": "context",
+                "elements": [
                     {
-                        "type": "header",
-                        "text": {
-                                "type": "plain_text",
-                            "text": "here are the top 3 results",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {passage_list[0]['passage_score']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{passage_list[0]['passage_text']}",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {passage_list[1]['passage_score']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{passage_list[1]['passage_text']}",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {passage_list[2]['passage_score']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{passage_list[2]['passage_text']}",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "divider"
-                    },
-                    {
-                        "type": "header",
-                        "text": {
-                                "type": "plain_text",
-                            "text": "expanded",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {text_list[0]['confidence']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{text_list[0]['text'][:1000]} ...",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {text_list[1]['confidence']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{text_list[1]['text'][:1000]} ...",
-                                    "emoji": True
-                        }
-                    },
-                    {
-                        "type": "context",
-                        "elements": [
-                                {
-                                    "type": "plain_text",
-                                    "text": f"confidence level = {text_list[2]['confidence']}",
-                                    "emoji": True
-                                }
-                        ]
-                    },
-                    {
-                        "type": "section",
-                        "text": {
-                                "type": "plain_text",
-                            "text": f"{text_list[2]['text'][:1000]} ...",
-                                    "emoji": True
-                        }
-                    },
+                        "type": "plain_text",
+                        "text": f"confidence level = {score}",
+                    }
                 ]
             }
-            return message
+            return slack_component_score
 
-        message = format_message(passage_list, text_list)
-        requests.post(content_response_url, json=message)
-    except:
-        basic_response = response['output']['generic'][0]['text']
-        basic_slack_message = {
-            "blocks": [
-                {
-                    "type": "section",
-                    "text": {
-                        "type": "plain_text",
-                        "text": f"{basic_response}",
-                        "emoji": True
-                    }
+        def slack_formatter_text(n):
+            try:
+                text = n['passage_text']
+            except KeyError:
+                text = n['highlight']['text'][0]
+                text = text.replace("<em>", "_*")
+                text = text.replace("</em>", "*_")
+            slack_component_text = {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": f"{text}",
                 }
-            ]
-        }
-        requests.post(content_response_url, json=basic_slack_message)
+            }
+            return slack_component_text
 
-@app.route('/detail-view', methods=['POST'])
+        header_1 = {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "here are the top 3 results"
+            }
+        }
+        divider = {
+            "type": "divider"
+        }
+
+        header_2 = {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "expanded"
+            }
+        }
+        formatted_passages_score = [slack_formatter_score(passage) for passage in passage_list]
+        formatted_passages_text = [slack_formatter_text(passage) for passage in passage_list]
+        formatted_text_score = [slack_formatter_score(result) for result in results_list ]
+        formatted_text_text = [slack_formatter_text(result) for result in results_list ]
+
+
+
+        ##combine everything
+        final_components_list = []
+        final_components_list.append(header_1)
+        for i in formatted_passages_score:
+            final_components_list.append(i)
+            for i in formatted_passages_text:
+                final_components_list.append(i)
+        final_components_list.append(divider)
+        final_components_list.append(header_2)
+        for i in formatted_text_score:
+            final_components_list.append(i)
+            for i in formatted_text_text:
+                final_components_list.append(i)
+
+
+        slack_message = {
+            'blocks' : final_components_list 
+        } 
+        print("slack_message")
+        requests.post(content_response_url, json=slack_message)
+    except:
+        try:
+            basic_response = response['output']['generic'][0]['text']
+            basic_slack_message = {
+                "blocks": [
+                    {
+                        "type": "section",
+                        "text": {
+                            "type": "plain_text",
+                            "text": f"{basic_response}",
+                       
+                        }
+                    }
+                ]
+            }
+            requests.post(content_response_url, json=basic_slack_message)
+        except IndexError:
+            basic_slack_message = {
+                "blocks": [
+                    {
+                        "type": "section",
+                        "text": {
+                            "type": "plain_text",
+                            "text": f"(caught at intent)",
+                       
+                        }
+                    }
+                ]
+            }
+            requests.post(content_response_url, json=basic_slack_message)
+
+@ app.route('/detail-view', methods=['POST'])
 def detail_view():
 
     items = {
-        '1001' : { 
-        'title': "Abraham Ortelius's map of Southeast Asia",
-        'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/map.jpg',
-        'description': "Abraham Ortelius (1527-1598) was a Flemish cartographer whose Theatrum Orbis Terrarum (Theatre of the World) was regarded as the first modern atlas. In this 1570 map, the Malay Peninsula appears as an elongated extension of mainland Southeast Asia, and Singapore as an appendix, marked 'Cincapura', with a cluster of islets. As was common practice for the time, the map also has illustrations of mermaids and imaginary sea creatures.", 
+        '1001': {
+            'title': "Abraham Ortelius's map of Southeast Asia",
+            'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/map.jpg',
+            'description': "Abraham Ortelius (1527-1598) was a Flemish cartographer whose Theatrum Orbis Terrarum (Theatre of the World) was regarded as the first modern atlas. In this 1570 map, the Malay Peninsula appears as an elongated extension of mainland Southeast Asia, and Singapore as an appendix, marked 'Cincapura', with a cluster of islets. As was common practice for the time, the map also has illustrations of mermaids and imaginary sea creatures.",
         },
-        '1002' : { 
-        'title': "Archaeology",
-        'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1002_arch.jpg',
-        'description': "Although there are only a few historical sources that address Singapore's pre-colonial past, archaeology has helped to fill some of the gaps. Since 1984, archaeologists in Singapore have uncovered traces of pre-colonial Singapura or Temasek in the Singapore River and Fort Canning areas. This settlement flourished for about a hundred years between the 14th and 15 centuries. This was followed by a hiatus in the 165h century, before a brief revival in the 17th century. Over the years, archaeological excavations have revealed many remarkable finds. Some highlights which were recovered from 2001 to 2015 are displayed here. All objects in this showcase are courtesy of the Archaeology Unit, Institute of Southeast Asian Studies.",
+        '1002': {
+            'title': "Archaeology",
+            'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1002_arch.jpg',
+            'description': "Although there are only a few historical sources that address Singapore's pre-colonial past, archaeology has helped to fill some of the gaps. Since 1984, archaeologists in Singapore have uncovered traces of pre-colonial Singapura or Temasek in the Singapore River and Fort Canning areas. This settlement flourished for about a hundred years between the 14th and 15 centuries. This was followed by a hiatus in the 165h century, before a brief revival in the 17th century. Over the years, archaeological excavations have revealed many remarkable finds. Some highlights which were recovered from 2001 to 2015 are displayed here. All objects in this showcase are courtesy of the Archaeology Unit, Institute of Southeast Asian Studies.",
         },
-        '1003' : { 
-        'title': "Singapore Stone",
-        'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1003_stone.jpg',
-        'description': "10-14th centuries, Singapore River mouth, Inscribed sandstone.", 
+        '1003': {
+            'title': "Singapore Stone",
+            'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1003_stone.jpg',
+            'description': "10-14th centuries, Singapore River mouth, Inscribed sandstone.",
         },
-        '1004' : { 
-        'title': "Singapura 1299-1818",
-        'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1004_statue_sangnilaautama.jpg',
-        'description': "Where does Singapore's history begin?",
+        '1004': {
+            'title': "Singapura 1299-1818",
+            'image_url': 'https://cloud-object-storage-zn-cos-standard-nlt.s3.jp-tok.cloud-object-storage.appdomain.cloud/1004_statue_sangnilaautama.jpg',
+            'description': "Where does Singapore's history begin?",
         },
     }
 
-        
     def format(item_number, title, image_url, description):
         formatted_response = {
             "blocks": [
@@ -242,7 +200,7 @@ def detail_view():
                     "text": {
                         "type": "plain_text",
                         "text": f"{item_number}:{title}",
-                        "emoji": True
+    
                     }
                 },
                 {
@@ -255,12 +213,12 @@ def detail_view():
                     "text": {
                         "type": "plain_text",
                         "text": f"{description}",
-                        "emoji": True
+    
                     }
                 }
             ]
         }
-    
+
         return formatted_response
 
     try:
@@ -270,7 +228,8 @@ def detail_view():
         if match:
             item_to_search = match.group()
             search = items[item_to_search]
-            response_message = format(item_to_search, search['title'], search['image_url'],search['description'])
+            response_message = format(
+                item_to_search, search['title'], search['image_url'], search['description'])
         else:
             print('no match')
     except KeyError:
@@ -281,4 +240,3 @@ def detail_view():
         return jsonify(response_message), 200
     except:
         return jsonify("Sorry but I could not find anything"), 200
-    

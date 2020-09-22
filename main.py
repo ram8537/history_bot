@@ -44,16 +44,15 @@ def watson_call(content_text, content_response_url):
         input={
             'message_type': 'text',
             'text': f'{content_text}'
+    
         }).get_result()
+    
 
     try:
         filtered_response = response['output']['user_defined']['personal_api']['watson_response']
+        print(filtered_response)
         passage_list = filtered_response['passages']
         results_list = filtered_response['results']
-        print("passage_list")
-        print(passage_list)
-        print("results_list")
-        print(results_list)
         
         def slack_formatter_score(n):
             try:
@@ -111,28 +110,31 @@ def watson_call(content_text, content_response_url):
         formatted_text_text = [slack_formatter_text(result) for result in results_list ]
 
 
-
         ##combine everything
         final_components_list = []
         final_components_list.append(header_1)
-        for i in formatted_passages_score:
-            final_components_list.append(i)
-            for i in formatted_passages_text:
-                final_components_list.append(i)
+        for i in range (len(formatted_passages_score)):
+            final_components_list.append(formatted_passages_score[i])
+            final_components_list.append(formatted_passages_text[i])
+
         final_components_list.append(divider)
         final_components_list.append(header_2)
-        for i in formatted_text_score:
-            final_components_list.append(i)
-            for i in formatted_text_text:
-                final_components_list.append(i)
+
+        for i in range (len(formatted_text_score)):
+            final_components_list.append(formatted_text_score[i])
+            final_components_list.append(formatted_text_text[i])
 
 
         slack_message = {
-            'blocks' : final_components_list 
+            'blocks' : final_components_list
         } 
         print("slack_message")
+        print(slack_message)
+
         requests.post(content_response_url, json=slack_message)
+    
     except:
+        print("sending basic response")
         try:
             basic_response = response['output']['generic'][0]['text']
             basic_slack_message = {
@@ -235,7 +237,6 @@ def detail_view():
     except KeyError:
         pass
 
-    print(request.form)
     try:
         return jsonify(response_message), 200
     except:

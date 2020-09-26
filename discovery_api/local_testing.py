@@ -33,13 +33,13 @@ try:
 except (KeyError, NameError) as error:
     discovery_query_formatted = None
 
-question = 'singapore stone'
+question = 'who are the orang laut'
 
 try:
 
     query_response = discovery.query(environment_id=os.environ["WATSON_DISCOVERY_ENVIRONMENT_ID"],
                                      collection_id=os.environ["WATSON_DISCOVERY_COLLECTION_ID"],
-                                     filter=context['1002'],
+                                     filter=context['1006'],
                                      natural_language_query= question,
                                      return_='passages, results',
                                      passages=True,

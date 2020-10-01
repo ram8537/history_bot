@@ -1,0 +1,2144 @@
+{
+  "output": {
+    "intents": [],
+    "entities": [],
+    "actions": [],
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Confidence level: <? $hook_2001.passages[0].passage_score ?>\n<? $hook_2001.passages[0].passage_text ?>\nConfidence level:<? $hook_2001.passages[1].passage_score ?>\n<? $hook_2001.passages[1].passage_text ?>\nConfidence level:<? $hook_2001.passages[5].passage_score ?>\n<? $hook_2001.passages[5].passage_text ?>"
+      }
+    ],
+    "user_defined": {
+      "personal_api": {
+        "watson_response": {
+          "matching_results": 40,
+          "passages": [
+            {
+              "document_id": "05bb375114dfa48989843e0300fd42d1_19",
+              "end_offset": 12419,
+              "field": "text",
+              "passage_score": 7.68587798162486,
+              "passage_text": "The new archaeology, for all its insistence on testing hypotheses, the deductive method and the collection of samples in a more rigorous manner to enable such testing to occur, had difficulty with this crucial methodological point.",
+              "start_offset": 12188
+            },
+            {
+              "document_id": "8ff76646b08923376a691743c57b4140",
+              "end_offset": 8434,
+              "field": "text",
+              "passage_score": 6.555452964903573,
+              "passage_text": "Further investigation, including the search for buried and inundated remains of these early colonists is under consideration ( Science , 19 October 2007 : 388 \u2013 389 ). The testing process is no less important where historical documents are available. Written records provide a basis for constructing expectations that can direct archaeological investigations.",
+              "start_offset": 8075
+            },
+            {
+              "document_id": "05bb375114dfa48989843e0300fd42d1_8",
+              "end_offset": 3496,
+              "field": "text",
+              "passage_score": 6.555452964903573,
+              "passage_text": "New archaeologists like Binford and Kent Flannery set great store by the philosophers of the scientific method who championed framing hypotheses and then testing them. What they were after were explanations that did not simply invoke the concept of culture to explain culture, a common criticism of culture history.",
+              "start_offset": 3181
+            }
+          ],
+          "results": [
+            {
+              "enriched_text": {
+                "categories": [
+                  {
+                    "label": "/science/geology/mineralogy",
+                    "score": 0.740514
+                  },
+                  {
+                    "label": "/food and drink/food/grains and pasta",
+                    "score": 0.62138
+                  }
+                ],
+                "concepts": [
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Mineral",
+                    "relevance": 0.933483,
+                    "text": "Mineral"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Copper",
+                    "relevance": 0.815135,
+                    "text": "Copper"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Materials_science",
+                    "relevance": 0.807231,
+                    "text": "Materials science"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Mohs_scale_of_mineral_hardness",
+                    "relevance": 0.705255,
+                    "text": "Mohs scale of mineral hardness"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/2006_albums",
+                    "relevance": 0.658429,
+                    "text": "2006 albums"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Window",
+                    "relevance": 0.648544,
+                    "text": "Window"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Hardness",
+                    "relevance": 0.614342,
+                    "text": "Hardness"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Mineralogy",
+                    "relevance": 0.601652,
+                    "text": "Mineralogy"
+                  }
+                ],
+                "entities": [
+                  {
+                    "count": 2,
+                    "relevance": 0.857258,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "Rice",
+                    "type": "Person"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.631589,
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.375558
+                    },
+                    "text": "Peacock",
+                    "type": "Person"
+                  }
+                ],
+                "keywords": [
+                  {
+                    "count": 1,
+                    "relevance": 0.804548,
+                    "text": "point scale of hardness"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.729012,
+                    "text": "depositional environment"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.685864,
+                    "text": "duration of firing"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.684345,
+                    "text": "grain-size distribution"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.641007,
+                    "text": "precise items"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.619909,
+                    "text": "mineral composition"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.608595,
+                    "text": "copper wire"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.596635,
+                    "text": "Hardness"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.581336,
+                    "text": "length"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.570544,
+                    "text": "composite material"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.551023,
+                    "text": "steel blade"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.550332,
+                    "text": "alternative test"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.548155,
+                    "text": "window glass"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.544667,
+                    "text": "Rice"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.542518,
+                    "text": "Mohs"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.536346,
+                    "text": "porosity"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.530265,
+                    "text": "scale"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.526394,
+                    "text": "points"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.506147,
+                    "text": "pottery"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.506147,
+                    "text": "Peacock"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.506147,
+                    "text": "Appendix"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.500314,
+                    "text": "precise indicator"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.443996,
+                    "text": "terms of resistance"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.441963,
+                    "text": "wide favour"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.395374,
+                    "text": "fingernail"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.391052,
+                    "text": "scratching"
+                  }
+                ],
+                "sentiment": {
+                  "document": {
+                    "label": "positive",
+                    "score": 0.783737
+                  }
+                }
+              },
+              "extracted_metadata": {
+                "file_type": "pdf",
+                "filename": "09.4_pp_150_189_Pottery_Fabrics.pdf",
+                "sha1": "4f3a7c3e92d4a5fe42ddafb92929bcbacd7e1c76",
+                "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:34, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+              },
+              "highlight": {
+                "enriched_text.keywords.text": [
+                  "alternative <em>test</em>"
+                ],
+                "text": [
+                  "Mohs 10 -point scale of hardness is often used but an alternative <em>test</em> using a fingernail (Mohs 2 or 2 . 5 ) and a steel blade ( 6 ) has found wide favour (Peacock 1977 , 30 ). Rice suggests that copper wire (Mohs 3 ) and window glass ( 4 . 5 ) can be used to mark other points in the scale (Rice 1987 , 357 ; see Appendix 1 )."
+                ]
+              },
+              "id": "d9eadc8cf0d56518f73f241412ae861c_4",
+              "result_metadata": {
+                "confidence": 0.15742274615889704,
+                "score": 2.9019339
+              },
+              "segment_metadata": {
+                "id": "86df6923-d029-4347-a5e2-adaf581ee9d2",
+                "parent_id": "d9eadc8cf0d56518f73f241412ae861c",
+                "total_segments": 16
+              },
+              "subtitle": [
+                "Hardness"
+              ],
+              "text": "Hardness is usually expressed in terms of resistance to scratching. Mohs 10 -point scale of hardness is often used but an alternative test using a fingernail (Mohs 2 or 2 . 5 ) and a steel blade ( 6 ) has found wide favour (Peacock 1977 , 30 ). Rice suggests that copper wire (Mohs 3 ) and window glass ( 4 . 5 ) can be used to mark other points in the scale (Rice 1987 , 357 ; see Appendix 1 ). Whatever the precise items in the scale, it is rather more difficult to determine exactly what is being measured in a composite material such as pottery. The length and duration of firing, porosity, grain-size distribution, post-depositional environment and mineral composition all contribute to the \u2018hardness\u2019, and although it should continue to be measured and recorded, hardness should not be used as a precise indicator."
+            },
+            {
+              "enriched_text": {
+                "categories": [
+                  {
+                    "label": "/society/dating",
+                    "score": 0.877867
+                  },
+                  {
+                    "label": "/law, govt and politics",
+                    "score": 0.74674
+                  },
+                  {
+                    "label": "/family and parenting/children",
+                    "score": 0.735904
+                  }
+                ],
+                "concepts": [
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Pottery",
+                    "relevance": 0.94683,
+                    "text": "Pottery"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Question",
+                    "relevance": 0.914189,
+                    "text": "Question"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Interpretation_(aesthetics)",
+                    "relevance": 0.745486,
+                    "text": "Interpretation"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/The_Reader",
+                    "relevance": 0.743097,
+                    "text": "The Reader"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Interrogative_word",
+                    "relevance": 0.733411,
+                    "text": "Interrogative word"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Chapters",
+                    "relevance": 0.705098,
+                    "text": "Chapters"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Ostracon",
+                    "relevance": 0.675803,
+                    "text": "Ostracon"
+                  }
+                ],
+                "entities": [
+                  {
+                    "count": 1,
+                    "relevance": 0.926771,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "ofwhatwasapot",
+                    "type": "Person"
+                  }
+                ],
+                "keywords": [
+                  {
+                    "count": 1,
+                    "relevance": 0.718019,
+                    "text": "sort of questions"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.630145,
+                    "text": "aims of this chapter"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.583185,
+                    "text": "particular group of pottery"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.571776,
+                    "text": "good standard practice"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.56981,
+                    "text": "Part III"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.567866,
+                    "text": "Foundational data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.564982,
+                    "text": "individual vessels"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.561815,
+                    "text": "special needs"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.561439,
+                    "text": "recording pottery"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.560194,
+                    "text": "test of time"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.556978,
+                    "text": "archaeological uses"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.554735,
+                    "text": "various phases of study"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.546647,
+                    "text": "bigger picture"
+                  },
+                  {
+                    "count": 4,
+                    "relevance": 0.543946,
+                    "text": "data"
+                  },
+                  {
+                    "count": 5,
+                    "relevance": 0.542699,
+                    "text": "pottery"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.537639,
+                    "text": "interpretation of a single vessel"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.536979,
+                    "text": "broad terms"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.535199,
+                    "text": "such themes"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.53403,
+                    "text": "pottery assemblages"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.532636,
+                    "text": "interesting question"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.530518,
+                    "text": "handful of mute sherds"
+                  },
+                  {
+                    "count": 6,
+                    "relevance": 0.526723,
+                    "text": "questions"
+                  },
+                  {
+                    "count": 4,
+                    "relevance": 0.525479,
+                    "text": "interpretation"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.524346,
+                    "text": "Part II"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.522555,
+                    "text": "claustrophobic feeling of a rigid system"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.521814,
+                    "text": "theoretical discussions of Part III"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.51904,
+                    "text": "assemblages"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.518411,
+                    "text": "sherds"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.518136,
+                    "text": "terms of the social organisation"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.517042,
+                    "text": "special information"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.516592,
+                    "text": "reader"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.516287,
+                    "text": "Chapter"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.51566,
+                    "text": "sites"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.515528,
+                    "text": "ceramic data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.515208,
+                    "text": "levels of evidence"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.51489,
+                    "text": "earlier phase of study"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.513892,
+                    "text": "ideas"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.513849,
+                    "text": "unusual event"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.511501,
+                    "text": "evidence"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.51086,
+                    "text": "chapters"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.509449,
+                    "text": "Discernment"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.509026,
+                    "text": "times"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508962,
+                    "text": "extent"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508928,
+                    "text": "use"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508872,
+                    "text": "attempt"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.50885,
+                    "text": "example"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508658,
+                    "text": "such practices"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.508463,
+                    "text": "detail"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.50798,
+                    "text": "archaeologists"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.507828,
+                    "text": "experience"
+                  }
+                ],
+                "sentiment": {
+                  "document": {
+                    "label": "positive",
+                    "score": 0.542326
+                  }
+                }
+              },
+              "extracted_metadata": {
+                "file_type": "pdf",
+                "filename": "07.2_pp_24_38_The_Potential_of_Pottery_as_Archaeological_Evidence.pdf",
+                "sha1": "1f1e522c7925cbf45dac402268e76451d0edccaf",
+                "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:33, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+              },
+              "highlight": {
+                "enriched_text.keywords.text": [
+                  "<em>test</em> of time"
+                ],
+                "text": [
+                  "The aims of this chapter are to look at the archaeological uses made of pottery in the various phases of study described in Chapter 1 , to see which have stood the <em>test</em> of time, to point the reader forward to chapters that will deal with such themes in more detail (Part III) and to provide a general rationale for the practical approaches described in Part II."
+                ]
+              },
+              "id": "5c1c737c8449051cb0f129835cd223e9",
+              "result_metadata": {
+                "confidence": 0.1488508313114844,
+                "score": 2.83840785
+              },
+              "segment_metadata": {
+                "id": "5c1c737c8449051cb0f129835cd223e9",
+                "parent_id": "5c1c737c8449051cb0f129835cd223e9",
+                "total_segments": 5
+              },
+              "text": "The aims of this chapter are to look at the archaeological uses made of pottery in the various phases of study described in Chapter 1 , to see which have stood the test of time, to point the reader forward to chapters that will deal with such themes in more detail (Part III) and to provide a general rationale for the practical approaches described in Part II. Clearly, not all assemblages, or even all sites, will yield evidence of all the types to be described below. Discernment is needed to know what sort of questions can reasonably be asked of a particular group of pottery \u2013 this is best (perhaps only) learnt by experience, but we hope that the theoretical discussions of Part III will help the reader to avoid the twin pitfalls of under- and over-interpretation. It is nevertheless true that when excavating and recording pottery we do not know all the questions that are likely to be asked of it, and that therefore some ideas of \u2018good standard practice\u2019 in recording and summarising pottery assemblages are very useful, although they may be augmented by special information to meet special needs. We hope to provide such practices in Part II, without giving the reader the claustrophobic feeling of a rigid system fixed for all times and all places. We should make it clear before starting that just because an idea belongs to an earlier phase of study, or paradigm, that does not mean it is of no use to today\u2019s worker. In this chapter we shall look at three levels of evidence, from raw (or foundational) data through aggregated (or integrated) data to fully synthesised data (interpretation): (i) Foundational data , relating to individual vessels or sherds, and to questions that could reasonably be asked of them, though with varying degrees of success. (ii) Integrated data , built up from (i) and relating to assemblages, since the interpretation of a single vessel or sherd in isolation is usually impossible (and certainly inadvisable), and that information on assemblages is needed as a step towards interpretation. For example, to know that a vessel found at site A was made at site B is not particularly useful, unless we know at least whether this is a common or an unusual event. (iii) Interpretation is seen here as the attempt to fit ceramic data into a bigger picture, to say what it might mean in terms of the social organisation behind it, rate of change (or the lack of it), relationships between contemporary societies, and so on. In broad terms, it is the telling of part of the human story. It is likely to involvedatafromseveralsites. If you ask archaeologists in an unguarded moment what they use pottery for (or why excavated pottery is kept and not thrown on the spoil-heap) they will probably reply \u2018for dating evidence\u2019. If you give them more time, or ask someone who has worked with pottery or at least read about it, they will probably come up with three questions that one could reasonably ask of excavated pottery: (i) when was it made? (ii) where and how was it made? (iii) what was it made for? These questions are based on the obvious facts that every pot was ( 1 ) made or used at a certain time, ( 2 ) made at a certain place and in a certain way and ( 3 ) used for certain practical or symbolic purposes. The interesting question is how much we can glean about them from a handful of mute sherds: we shall look at these questions in detail in Chapters 16 , 17 and 18 respectively. To some extent, these questions pose further ones about ( 1 ) how was production organised?, ( 2 )ofwhatwasapot made? and ( ) what shape was it?, which we shall consider in Chapters 12 , 13 and 14 , respectively."
+            },
+            {
+              "enriched_text": {
+                "categories": [
+                  {
+                    "label": "/business and industrial/business operations/management/business process",
+                    "score": 0.920935
+                  },
+                  {
+                    "label": "/education/homework and study tips",
+                    "score": 0.835001
+                  },
+                  {
+                    "label": "/business and industrial/business software",
+                    "score": 0.744537
+                  }
+                ],
+                "concepts": [
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Metrology",
+                    "relevance": 0.968928,
+                    "text": "Metrology"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Certified_reference_materials",
+                    "relevance": 0.844855,
+                    "text": "Certified reference materials"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Standard",
+                    "relevance": 0.841394,
+                    "text": "Standard"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Chemistry",
+                    "relevance": 0.824534,
+                    "text": "Chemistry"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Quality_control",
+                    "relevance": 0.814494,
+                    "text": "Quality control"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Calibration",
+                    "relevance": 0.804855,
+                    "text": "Calibration"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Measurement",
+                    "relevance": 0.686651,
+                    "text": "Measurement"
+                  },
+                  {
+                    "dbpedia_resource": "http://dbpedia.org/resource/Management",
+                    "relevance": 0.58255,
+                    "text": "Management"
+                  }
+                ],
+                "entities": [
+                  {
+                    "count": 3,
+                    "relevance": 0.907397,
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.590532
+                    },
+                    "text": "scientist",
+                    "type": "JobTitle"
+                  },
+                  {
+                    "count": 1,
+                    "disambiguation": {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Imperial_College_Press",
+                      "name": "Imperial College Press",
+                      "subtype": [
+                        "Company"
+                      ]
+                    },
+                    "relevance": 0.810501,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "ICP",
+                    "type": "Organization"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.778614,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "Bishop",
+                    "type": "Person"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.699926,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "Pollard",
+                    "type": "Person"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.698007,
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.568884
+                    },
+                    "text": "analyst",
+                    "type": "JobTitle"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.672031,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "Hein",
+                    "type": "Person"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.662599,
+                    "sentiment": {
+                      "label": "neutral",
+                      "score": 0
+                    },
+                    "text": "Ellisonetal.",
+                    "type": "Person"
+                  }
+                ],
+                "keywords": [
+                  {
+                    "count": 1,
+                    "relevance": 0.709786,
+                    "text": "independent quality control standards"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.667761,
+                    "text": "Good quality assurance of the analytical data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.647805,
+                    "text": "standard materials"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.626011,
+                    "text": "compositional analysis"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.570319,
+                    "text": "archaeological scientist"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.567898,
+                    "text": "consistent use"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.567545,
+                    "text": "Quality-control procedures"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.567236,
+                    "text": "such data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.566783,
+                    "text": "necessary inter-laboratory factors"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.566689,
+                    "text": "reference materials"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.56554,
+                    "text": "absolute values"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.56448,
+                    "text": "enormous benefit"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.559856,
+                    "text": "calibration standards"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.551445,
+                    "text": "analyst aims"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.543171,
+                    "text": "regular intervals"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.542504,
+                    "text": "inter-laboratory exchange of data"
+                  },
+                  {
+                    "count": 4,
+                    "relevance": 0.541949,
+                    "text": "laboratory"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.541294,
+                    "text": "series of analyses"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.538343,
+                    "text": "such testing"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.534945,
+                    "text": "quality-control standards"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.534405,
+                    "text": "own independent quality-control standards"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.534177,
+                    "text": "similar CRMs"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.533903,
+                    "text": "compositional data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.529314,
+                    "text": "pure materials"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.527969,
+                    "text": "archaeological scientists of their own control standards"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.526201,
+                    "text": "material"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.524685,
+                    "text": "analytical process"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.52377,
+                    "text": "factors"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.523148,
+                    "text": "realism dictates"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.520789,
+                    "text": "field of analytical chemistry"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.520071,
+                    "text": "use of quality control standards"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.518906,
+                    "text": "sensitivity"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.518655,
+                    "text": "data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.517521,
+                    "text": "long-term usefulness of data"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.516942,
+                    "text": "actual values"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.515818,
+                    "text": "subsequent investigations"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.515674,
+                    "text": "later project"
+                  },
+                  {
+                    "count": 3,
+                    "relevance": 0.514012,
+                    "text": "laboratories"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.513842,
+                    "text": "cultural resource management"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.512848,
+                    "text": "primary aim"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.512576,
+                    "text": "laboratory-specific"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.512165,
+                    "text": "series of similar approaches"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.511701,
+                    "text": "account"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.510111,
+                    "text": "example"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.509706,
+                    "text": "method validation"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.509124,
+                    "text": "customer"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508976,
+                    "text": "consistency"
+                  },
+                  {
+                    "count": 2,
+                    "relevance": 0.508947,
+                    "text": "accuracy"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508911,
+                    "text": "measure"
+                  },
+                  {
+                    "count": 1,
+                    "relevance": 0.508732,
+                    "text": "proficiency-testing schemes"
+                  }
+                ],
+                "sentiment": {
+                  "document": {
+                    "label": "positive",
+                    "score": 0.668886
+                  }
+                }
+              },
+              "extracted_metadata": {
+                "file_type": "pdf",
+                "filename": "09.4_pp_150_189_Pottery_Fabrics.pdf",
+                "sha1": "4f3a7c3e92d4a5fe42ddafb92929bcbacd7e1c76",
+                "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:34, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+              },
+              "highlight": {
+                "enriched_text.keywords.text": [
+                  "such <em>testing</em>",
+                  "proficiency-<em>testing</em> schemes"
+                ],
+                "text": [
+                  "In the field of analytical chemistry generally, such <em>testing</em> is designated as method validation, and is one of a series of similar approaches such as proficiency-<em>testing</em> schemes in which multiple laboratories participate, analysing the same material (Hein et al. 2002 ;MillerandMiller 2010 , 104 \u2013 6 ;Ellisonetal. 2009 , 144 \u2013 59 )."
+                ]
+              },
+              "id": "d9eadc8cf0d56518f73f241412ae861c_14",
+              "result_metadata": {
+                "confidence": 0.16846628001702724,
+                "score": 2.6112533664375546
+              },
+              "segment_metadata": {
+                "id": "f3eccac3-af29-4c91-a0d9-7bc5f673d0cc",
+                "parent_id": "d9eadc8cf0d56518f73f241412ae861c",
+                "total_segments": 16
+              },
+              "subtitle": [
+                "Analytical Measurement and Quality Control"
+              ],
+              "text": "Three factors must be taken into account when considering compositional analysis: sensitivity, precision and accuracy (Bishop et al. ). Sensitivity is the ability to measure very small quantities of an element, broadly the minimum that can be detected. Precision is the repeatability of the measurements. It is a measure of how similar a series of analyses of the same material would be. Accuracy is the relationship between the measurements and the actual values. It is necessary to use standard materials when setting up or calibrating an analysis instrument. These can be made from pure materials \u2013 for example to make solution-based calibration standards for ICP. Alternatively they can be certified reference materials (CRMs \u2013 not to be confused with cultural resource management), containing many elements in known concentrations, most preferably clays, ceramics or silicates (i.e. of the same matrix as pottery). It is most important to distinguish between these calibration standards and independent quality control standards used to monitor the analytical process. Good quality assurance of the analytical data by the laboratory delivering the analyses is essential. Unless this is undertaken at the time of analysis, the data generated may not be usable in a follow-up or a later project on related material. Neither would it be useful to later projects by other researchers who obtained analyses by another laboratory. Regrettably, too many published projects are self-contained and unrelateable to subsequent investigations. The challenge is for all laboratories to publish compositional data which is not laboratory-specific, i.e. can only be compared with results obtained on the same equipment in the same laboratory. The data should be universally applicable after suitable cross-checking of laboratory standardisation. It would be of enormous benefit if there was more inter-laboratory exchange of data (see below pp. 175 \u2013 176 ) and that the necessary inter-laboratory factors were published. Quality-control procedures ensure the long-term usefulness of data generated in a laboratory and its compatibility with those of other laboratories. Publication of a laboratory\u2019s data on internationally recognised standard reference materials (CRMs) would allow such data to link in with the worldwide archaeometric community. The quality-control standards should be clay or similar CRMs and (most importantly) must not be any of those used for calibration \u2013 i.e. they must be independent materials. The archaeological scientist will include some (typically) at regular intervals in each batch of sherds analysed, and the analyses on the quality-control standards are then monitored to see whether they deviate from previous batches. Even though commercial laboratories include their own independent quality-control standards (often not reported to the customer), consistent use by the archaeological scientists of their own control standards are essential for maintaining future compatibility and quality of the data they are processing in pottery projects. In the field of analytical chemistry generally, such testing is designated as method validation, and is one of a series of similar approaches such as proficiency-testing schemes in which multiple laboratories participate, analysing the same material (Hein et al. 2002 ;MillerandMiller 2010 , 104 \u2013 6 ;Ellisonetal. 2009 , 144 \u2013 59 ). Advanced techniques of compositional analysis such as those employed in the examination of archaeological ceramics do not provide absolute values but rather an estimate of the concentrations of the elements in the ceramics. The analyst aims to get these as close to absolute values as possible, but realism dictates that maintaining consistency should be the primary aim, achievable by the use of quality control standards. Fuller explanations of all these aspects are given by Pollard ( 2007 )."
+            }
+          ],
+          "retrieval_details": {
+            "document_retrieval_strategy": "untrained"
+          },
+          "session_token": "1_UOpAhwTlqva1y8W2_2zIcZ2opR"
+        }
+      }
+    }
+  },
+  "context": {
+    "global": {
+      "system": {
+        "turn_count": 1
+      },
+      "session_id": "2c468710-b7fe-43f1-91ac-3fbfb552bb23"
+    },
+    "skills": {
+      "main skill": {
+        "user_defined": {
+          "hook_2001": {
+            "matching_results": 40,
+            "passages": [
+              {
+                "document_id": "05bb375114dfa48989843e0300fd42d1_19",
+                "end_offset": 12419,
+                "field": "text",
+                "passage_score": 7.68587798162486,
+                "passage_text": "The new archaeology, for all its insistence on testing hypotheses, the deductive method and the collection of samples in a more rigorous manner to enable such testing to occur, had difficulty with this crucial methodological point.",
+                "start_offset": 12188
+              },
+              {
+                "document_id": "8ff76646b08923376a691743c57b4140",
+                "end_offset": 8434,
+                "field": "text",
+                "passage_score": 6.555452964903573,
+                "passage_text": "Further investigation, including the search for buried and inundated remains of these early colonists is under consideration ( Science , 19 October 2007 : 388 \u2013 389 ). The testing process is no less important where historical documents are available. Written records provide a basis for constructing expectations that can direct archaeological investigations.",
+                "start_offset": 8075
+              },
+              {
+                "document_id": "05bb375114dfa48989843e0300fd42d1_8",
+                "end_offset": 3496,
+                "field": "text",
+                "passage_score": 6.555452964903573,
+                "passage_text": "New archaeologists like Binford and Kent Flannery set great store by the philosophers of the scientific method who championed framing hypotheses and then testing them. What they were after were explanations that did not simply invoke the concept of culture to explain culture, a common criticism of culture history.",
+                "start_offset": 3181
+              }
+            ],
+            "results": [
+              {
+                "enriched_text": {
+                  "categories": [
+                    {
+                      "label": "/science/geology/mineralogy",
+                      "score": 0.740514
+                    },
+                    {
+                      "label": "/food and drink/food/grains and pasta",
+                      "score": 0.62138
+                    }
+                  ],
+                  "concepts": [
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Mineral",
+                      "relevance": 0.933483,
+                      "text": "Mineral"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Copper",
+                      "relevance": 0.815135,
+                      "text": "Copper"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Materials_science",
+                      "relevance": 0.807231,
+                      "text": "Materials science"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Mohs_scale_of_mineral_hardness",
+                      "relevance": 0.705255,
+                      "text": "Mohs scale of mineral hardness"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/2006_albums",
+                      "relevance": 0.658429,
+                      "text": "2006 albums"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Window",
+                      "relevance": 0.648544,
+                      "text": "Window"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Hardness",
+                      "relevance": 0.614342,
+                      "text": "Hardness"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Mineralogy",
+                      "relevance": 0.601652,
+                      "text": "Mineralogy"
+                    }
+                  ],
+                  "entities": [
+                    {
+                      "count": 2,
+                      "relevance": 0.857258,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "Rice",
+                      "type": "Person"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.631589,
+                      "sentiment": {
+                        "label": "positive",
+                        "score": 0.375558
+                      },
+                      "text": "Peacock",
+                      "type": "Person"
+                    }
+                  ],
+                  "keywords": [
+                    {
+                      "count": 1,
+                      "relevance": 0.804548,
+                      "text": "point scale of hardness"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.729012,
+                      "text": "depositional environment"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.685864,
+                      "text": "duration of firing"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.684345,
+                      "text": "grain-size distribution"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.641007,
+                      "text": "precise items"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.619909,
+                      "text": "mineral composition"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.608595,
+                      "text": "copper wire"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.596635,
+                      "text": "Hardness"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.581336,
+                      "text": "length"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.570544,
+                      "text": "composite material"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.551023,
+                      "text": "steel blade"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.550332,
+                      "text": "alternative test"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.548155,
+                      "text": "window glass"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.544667,
+                      "text": "Rice"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.542518,
+                      "text": "Mohs"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.536346,
+                      "text": "porosity"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.530265,
+                      "text": "scale"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.526394,
+                      "text": "points"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.506147,
+                      "text": "pottery"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.506147,
+                      "text": "Peacock"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.506147,
+                      "text": "Appendix"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.500314,
+                      "text": "precise indicator"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.443996,
+                      "text": "terms of resistance"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.441963,
+                      "text": "wide favour"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.395374,
+                      "text": "fingernail"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.391052,
+                      "text": "scratching"
+                    }
+                  ],
+                  "sentiment": {
+                    "document": {
+                      "label": "positive",
+                      "score": 0.783737
+                    }
+                  }
+                },
+                "extracted_metadata": {
+                  "file_type": "pdf",
+                  "filename": "09.4_pp_150_189_Pottery_Fabrics.pdf",
+                  "sha1": "4f3a7c3e92d4a5fe42ddafb92929bcbacd7e1c76",
+                  "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:34, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+                },
+                "highlight": {
+                  "enriched_text.keywords.text": [
+                    "alternative <em>test</em>"
+                  ],
+                  "text": [
+                    "Mohs 10 -point scale of hardness is often used but an alternative <em>test</em> using a fingernail (Mohs 2 or 2 . 5 ) and a steel blade ( 6 ) has found wide favour (Peacock 1977 , 30 ). Rice suggests that copper wire (Mohs 3 ) and window glass ( 4 . 5 ) can be used to mark other points in the scale (Rice 1987 , 357 ; see Appendix 1 )."
+                  ]
+                },
+                "id": "d9eadc8cf0d56518f73f241412ae861c_4",
+                "result_metadata": {
+                  "confidence": 0.15742274615889704,
+                  "score": 2.9019339
+                },
+                "segment_metadata": {
+                  "id": "86df6923-d029-4347-a5e2-adaf581ee9d2",
+                  "parent_id": "d9eadc8cf0d56518f73f241412ae861c",
+                  "total_segments": 16
+                },
+                "subtitle": [
+                  "Hardness"
+                ],
+                "text": "Hardness is usually expressed in terms of resistance to scratching. Mohs 10 -point scale of hardness is often used but an alternative test using a fingernail (Mohs 2 or 2 . 5 ) and a steel blade ( 6 ) has found wide favour (Peacock 1977 , 30 ). Rice suggests that copper wire (Mohs 3 ) and window glass ( 4 . 5 ) can be used to mark other points in the scale (Rice 1987 , 357 ; see Appendix 1 ). Whatever the precise items in the scale, it is rather more difficult to determine exactly what is being measured in a composite material such as pottery. The length and duration of firing, porosity, grain-size distribution, post-depositional environment and mineral composition all contribute to the \u2018hardness\u2019, and although it should continue to be measured and recorded, hardness should not be used as a precise indicator."
+              },
+              {
+                "enriched_text": {
+                  "categories": [
+                    {
+                      "label": "/society/dating",
+                      "score": 0.877867
+                    },
+                    {
+                      "label": "/law, govt and politics",
+                      "score": 0.74674
+                    },
+                    {
+                      "label": "/family and parenting/children",
+                      "score": 0.735904
+                    }
+                  ],
+                  "concepts": [
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Pottery",
+                      "relevance": 0.94683,
+                      "text": "Pottery"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Question",
+                      "relevance": 0.914189,
+                      "text": "Question"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Interpretation_(aesthetics)",
+                      "relevance": 0.745486,
+                      "text": "Interpretation"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/The_Reader",
+                      "relevance": 0.743097,
+                      "text": "The Reader"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Interrogative_word",
+                      "relevance": 0.733411,
+                      "text": "Interrogative word"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Chapters",
+                      "relevance": 0.705098,
+                      "text": "Chapters"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Ostracon",
+                      "relevance": 0.675803,
+                      "text": "Ostracon"
+                    }
+                  ],
+                  "entities": [
+                    {
+                      "count": 1,
+                      "relevance": 0.926771,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "ofwhatwasapot",
+                      "type": "Person"
+                    }
+                  ],
+                  "keywords": [
+                    {
+                      "count": 1,
+                      "relevance": 0.718019,
+                      "text": "sort of questions"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.630145,
+                      "text": "aims of this chapter"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.583185,
+                      "text": "particular group of pottery"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.571776,
+                      "text": "good standard practice"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.56981,
+                      "text": "Part III"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.567866,
+                      "text": "Foundational data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.564982,
+                      "text": "individual vessels"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.561815,
+                      "text": "special needs"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.561439,
+                      "text": "recording pottery"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.560194,
+                      "text": "test of time"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.556978,
+                      "text": "archaeological uses"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.554735,
+                      "text": "various phases of study"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.546647,
+                      "text": "bigger picture"
+                    },
+                    {
+                      "count": 4,
+                      "relevance": 0.543946,
+                      "text": "data"
+                    },
+                    {
+                      "count": 5,
+                      "relevance": 0.542699,
+                      "text": "pottery"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.537639,
+                      "text": "interpretation of a single vessel"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.536979,
+                      "text": "broad terms"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.535199,
+                      "text": "such themes"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.53403,
+                      "text": "pottery assemblages"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.532636,
+                      "text": "interesting question"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.530518,
+                      "text": "handful of mute sherds"
+                    },
+                    {
+                      "count": 6,
+                      "relevance": 0.526723,
+                      "text": "questions"
+                    },
+                    {
+                      "count": 4,
+                      "relevance": 0.525479,
+                      "text": "interpretation"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.524346,
+                      "text": "Part II"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.522555,
+                      "text": "claustrophobic feeling of a rigid system"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.521814,
+                      "text": "theoretical discussions of Part III"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.51904,
+                      "text": "assemblages"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.518411,
+                      "text": "sherds"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.518136,
+                      "text": "terms of the social organisation"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.517042,
+                      "text": "special information"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.516592,
+                      "text": "reader"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.516287,
+                      "text": "Chapter"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.51566,
+                      "text": "sites"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.515528,
+                      "text": "ceramic data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.515208,
+                      "text": "levels of evidence"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.51489,
+                      "text": "earlier phase of study"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.513892,
+                      "text": "ideas"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.513849,
+                      "text": "unusual event"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.511501,
+                      "text": "evidence"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.51086,
+                      "text": "chapters"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.509449,
+                      "text": "Discernment"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.509026,
+                      "text": "times"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508962,
+                      "text": "extent"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508928,
+                      "text": "use"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508872,
+                      "text": "attempt"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.50885,
+                      "text": "example"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508658,
+                      "text": "such practices"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.508463,
+                      "text": "detail"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.50798,
+                      "text": "archaeologists"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.507828,
+                      "text": "experience"
+                    }
+                  ],
+                  "sentiment": {
+                    "document": {
+                      "label": "positive",
+                      "score": 0.542326
+                    }
+                  }
+                },
+                "extracted_metadata": {
+                  "file_type": "pdf",
+                  "filename": "07.2_pp_24_38_The_Potential_of_Pottery_as_Archaeological_Evidence.pdf",
+                  "sha1": "1f1e522c7925cbf45dac402268e76451d0edccaf",
+                  "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:33, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+                },
+                "highlight": {
+                  "enriched_text.keywords.text": [
+                    "<em>test</em> of time"
+                  ],
+                  "text": [
+                    "The aims of this chapter are to look at the archaeological uses made of pottery in the various phases of study described in Chapter 1 , to see which have stood the <em>test</em> of time, to point the reader forward to chapters that will deal with such themes in more detail (Part III) and to provide a general rationale for the practical approaches described in Part II."
+                  ]
+                },
+                "id": "5c1c737c8449051cb0f129835cd223e9",
+                "result_metadata": {
+                  "confidence": 0.1488508313114844,
+                  "score": 2.83840785
+                },
+                "segment_metadata": {
+                  "id": "5c1c737c8449051cb0f129835cd223e9",
+                  "parent_id": "5c1c737c8449051cb0f129835cd223e9",
+                  "total_segments": 5
+                },
+                "text": "The aims of this chapter are to look at the archaeological uses made of pottery in the various phases of study described in Chapter 1 , to see which have stood the test of time, to point the reader forward to chapters that will deal with such themes in more detail (Part III) and to provide a general rationale for the practical approaches described in Part II. Clearly, not all assemblages, or even all sites, will yield evidence of all the types to be described below. Discernment is needed to know what sort of questions can reasonably be asked of a particular group of pottery \u2013 this is best (perhaps only) learnt by experience, but we hope that the theoretical discussions of Part III will help the reader to avoid the twin pitfalls of under- and over-interpretation. It is nevertheless true that when excavating and recording pottery we do not know all the questions that are likely to be asked of it, and that therefore some ideas of \u2018good standard practice\u2019 in recording and summarising pottery assemblages are very useful, although they may be augmented by special information to meet special needs. We hope to provide such practices in Part II, without giving the reader the claustrophobic feeling of a rigid system fixed for all times and all places. We should make it clear before starting that just because an idea belongs to an earlier phase of study, or paradigm, that does not mean it is of no use to today\u2019s worker. In this chapter we shall look at three levels of evidence, from raw (or foundational) data through aggregated (or integrated) data to fully synthesised data (interpretation): (i) Foundational data , relating to individual vessels or sherds, and to questions that could reasonably be asked of them, though with varying degrees of success. (ii) Integrated data , built up from (i) and relating to assemblages, since the interpretation of a single vessel or sherd in isolation is usually impossible (and certainly inadvisable), and that information on assemblages is needed as a step towards interpretation. For example, to know that a vessel found at site A was made at site B is not particularly useful, unless we know at least whether this is a common or an unusual event. (iii) Interpretation is seen here as the attempt to fit ceramic data into a bigger picture, to say what it might mean in terms of the social organisation behind it, rate of change (or the lack of it), relationships between contemporary societies, and so on. In broad terms, it is the telling of part of the human story. It is likely to involvedatafromseveralsites. If you ask archaeologists in an unguarded moment what they use pottery for (or why excavated pottery is kept and not thrown on the spoil-heap) they will probably reply \u2018for dating evidence\u2019. If you give them more time, or ask someone who has worked with pottery or at least read about it, they will probably come up with three questions that one could reasonably ask of excavated pottery: (i) when was it made? (ii) where and how was it made? (iii) what was it made for? These questions are based on the obvious facts that every pot was ( 1 ) made or used at a certain time, ( 2 ) made at a certain place and in a certain way and ( 3 ) used for certain practical or symbolic purposes. The interesting question is how much we can glean about them from a handful of mute sherds: we shall look at these questions in detail in Chapters 16 , 17 and 18 respectively. To some extent, these questions pose further ones about ( 1 ) how was production organised?, ( 2 )ofwhatwasapot made? and ( ) what shape was it?, which we shall consider in Chapters 12 , 13 and 14 , respectively."
+              },
+              {
+                "enriched_text": {
+                  "categories": [
+                    {
+                      "label": "/business and industrial/business operations/management/business process",
+                      "score": 0.920935
+                    },
+                    {
+                      "label": "/education/homework and study tips",
+                      "score": 0.835001
+                    },
+                    {
+                      "label": "/business and industrial/business software",
+                      "score": 0.744537
+                    }
+                  ],
+                  "concepts": [
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Metrology",
+                      "relevance": 0.968928,
+                      "text": "Metrology"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Certified_reference_materials",
+                      "relevance": 0.844855,
+                      "text": "Certified reference materials"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Standard",
+                      "relevance": 0.841394,
+                      "text": "Standard"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Chemistry",
+                      "relevance": 0.824534,
+                      "text": "Chemistry"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Quality_control",
+                      "relevance": 0.814494,
+                      "text": "Quality control"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Calibration",
+                      "relevance": 0.804855,
+                      "text": "Calibration"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Measurement",
+                      "relevance": 0.686651,
+                      "text": "Measurement"
+                    },
+                    {
+                      "dbpedia_resource": "http://dbpedia.org/resource/Management",
+                      "relevance": 0.58255,
+                      "text": "Management"
+                    }
+                  ],
+                  "entities": [
+                    {
+                      "count": 3,
+                      "relevance": 0.907397,
+                      "sentiment": {
+                        "label": "positive",
+                        "score": 0.590532
+                      },
+                      "text": "scientist",
+                      "type": "JobTitle"
+                    },
+                    {
+                      "count": 1,
+                      "disambiguation": {
+                        "dbpedia_resource": "http://dbpedia.org/resource/Imperial_College_Press",
+                        "name": "Imperial College Press",
+                        "subtype": [
+                          "Company"
+                        ]
+                      },
+                      "relevance": 0.810501,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "ICP",
+                      "type": "Organization"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.778614,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "Bishop",
+                      "type": "Person"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.699926,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "Pollard",
+                      "type": "Person"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.698007,
+                      "sentiment": {
+                        "label": "positive",
+                        "score": 0.568884
+                      },
+                      "text": "analyst",
+                      "type": "JobTitle"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.672031,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "Hein",
+                      "type": "Person"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.662599,
+                      "sentiment": {
+                        "label": "neutral",
+                        "score": 0
+                      },
+                      "text": "Ellisonetal.",
+                      "type": "Person"
+                    }
+                  ],
+                  "keywords": [
+                    {
+                      "count": 1,
+                      "relevance": 0.709786,
+                      "text": "independent quality control standards"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.667761,
+                      "text": "Good quality assurance of the analytical data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.647805,
+                      "text": "standard materials"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.626011,
+                      "text": "compositional analysis"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.570319,
+                      "text": "archaeological scientist"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.567898,
+                      "text": "consistent use"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.567545,
+                      "text": "Quality-control procedures"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.567236,
+                      "text": "such data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.566783,
+                      "text": "necessary inter-laboratory factors"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.566689,
+                      "text": "reference materials"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.56554,
+                      "text": "absolute values"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.56448,
+                      "text": "enormous benefit"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.559856,
+                      "text": "calibration standards"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.551445,
+                      "text": "analyst aims"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.543171,
+                      "text": "regular intervals"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.542504,
+                      "text": "inter-laboratory exchange of data"
+                    },
+                    {
+                      "count": 4,
+                      "relevance": 0.541949,
+                      "text": "laboratory"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.541294,
+                      "text": "series of analyses"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.538343,
+                      "text": "such testing"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.534945,
+                      "text": "quality-control standards"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.534405,
+                      "text": "own independent quality-control standards"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.534177,
+                      "text": "similar CRMs"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.533903,
+                      "text": "compositional data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.529314,
+                      "text": "pure materials"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.527969,
+                      "text": "archaeological scientists of their own control standards"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.526201,
+                      "text": "material"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.524685,
+                      "text": "analytical process"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.52377,
+                      "text": "factors"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.523148,
+                      "text": "realism dictates"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.520789,
+                      "text": "field of analytical chemistry"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.520071,
+                      "text": "use of quality control standards"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.518906,
+                      "text": "sensitivity"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.518655,
+                      "text": "data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.517521,
+                      "text": "long-term usefulness of data"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.516942,
+                      "text": "actual values"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.515818,
+                      "text": "subsequent investigations"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.515674,
+                      "text": "later project"
+                    },
+                    {
+                      "count": 3,
+                      "relevance": 0.514012,
+                      "text": "laboratories"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.513842,
+                      "text": "cultural resource management"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.512848,
+                      "text": "primary aim"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.512576,
+                      "text": "laboratory-specific"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.512165,
+                      "text": "series of similar approaches"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.511701,
+                      "text": "account"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.510111,
+                      "text": "example"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.509706,
+                      "text": "method validation"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.509124,
+                      "text": "customer"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508976,
+                      "text": "consistency"
+                    },
+                    {
+                      "count": 2,
+                      "relevance": 0.508947,
+                      "text": "accuracy"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508911,
+                      "text": "measure"
+                    },
+                    {
+                      "count": 1,
+                      "relevance": 0.508732,
+                      "text": "proficiency-testing schemes"
+                    }
+                  ],
+                  "sentiment": {
+                    "document": {
+                      "label": "positive",
+                      "score": 0.668886
+                    }
+                  }
+                },
+                "extracted_metadata": {
+                  "file_type": "pdf",
+                  "filename": "09.4_pp_150_189_Pottery_Fabrics.pdf",
+                  "sha1": "4f3a7c3e92d4a5fe42ddafb92929bcbacd7e1c76",
+                  "subject": "Downloaded from  https://www.cambridge.org/core. National University of Singapore (NUS), on 17 Sep 2020 at 12:25:34, subject to the Cambridge Core terms of use, available at https://www.cambridge.org/core/terms."
+                },
+                "highlight": {
+                  "enriched_text.keywords.text": [
+                    "such <em>testing</em>",
+                    "proficiency-<em>testing</em> schemes"
+                  ],
+                  "text": [
+                    "In the field of analytical chemistry generally, such <em>testing</em> is designated as method validation, and is one of a series of similar approaches such as proficiency-<em>testing</em> schemes in which multiple laboratories participate, analysing the same material (Hein et al. 2002 ;MillerandMiller 2010 , 104 \u2013 6 ;Ellisonetal. 2009 , 144 \u2013 59 )."
+                  ]
+                },
+                "id": "d9eadc8cf0d56518f73f241412ae861c_14",
+                "result_metadata": {
+                  "confidence": 0.16846628001702724,
+                  "score": 2.6112533664375546
+                },
+                "segment_metadata": {
+                  "id": "f3eccac3-af29-4c91-a0d9-7bc5f673d0cc",
+                  "parent_id": "d9eadc8cf0d56518f73f241412ae861c",
+                  "total_segments": 16
+                },
+                "subtitle": [
+                  "Analytical Measurement and Quality Control"
+                ],
+                "text": "Three factors must be taken into account when considering compositional analysis: sensitivity, precision and accuracy (Bishop et al. ). Sensitivity is the ability to measure very small quantities of an element, broadly the minimum that can be detected. Precision is the repeatability of the measurements. It is a measure of how similar a series of analyses of the same material would be. Accuracy is the relationship between the measurements and the actual values. It is necessary to use standard materials when setting up or calibrating an analysis instrument. These can be made from pure materials \u2013 for example to make solution-based calibration standards for ICP. Alternatively they can be certified reference materials (CRMs \u2013 not to be confused with cultural resource management), containing many elements in known concentrations, most preferably clays, ceramics or silicates (i.e. of the same matrix as pottery). It is most important to distinguish between these calibration standards and independent quality control standards used to monitor the analytical process. Good quality assurance of the analytical data by the laboratory delivering the analyses is essential. Unless this is undertaken at the time of analysis, the data generated may not be usable in a follow-up or a later project on related material. Neither would it be useful to later projects by other researchers who obtained analyses by another laboratory. Regrettably, too many published projects are self-contained and unrelateable to subsequent investigations. The challenge is for all laboratories to publish compositional data which is not laboratory-specific, i.e. can only be compared with results obtained on the same equipment in the same laboratory. The data should be universally applicable after suitable cross-checking of laboratory standardisation. It would be of enormous benefit if there was more inter-laboratory exchange of data (see below pp. 175 \u2013 176 ) and that the necessary inter-laboratory factors were published. Quality-control procedures ensure the long-term usefulness of data generated in a laboratory and its compatibility with those of other laboratories. Publication of a laboratory\u2019s data on internationally recognised standard reference materials (CRMs) would allow such data to link in with the worldwide archaeometric community. The quality-control standards should be clay or similar CRMs and (most importantly) must not be any of those used for calibration \u2013 i.e. they must be independent materials. The archaeological scientist will include some (typically) at regular intervals in each batch of sherds analysed, and the analyses on the quality-control standards are then monitored to see whether they deviate from previous batches. Even though commercial laboratories include their own independent quality-control standards (often not reported to the customer), consistent use by the archaeological scientists of their own control standards are essential for maintaining future compatibility and quality of the data they are processing in pottery projects. In the field of analytical chemistry generally, such testing is designated as method validation, and is one of a series of similar approaches such as proficiency-testing schemes in which multiple laboratories participate, analysing the same material (Hein et al. 2002 ;MillerandMiller 2010 , 104 \u2013 6 ;Ellisonetal. 2009 , 144 \u2013 59 ). Advanced techniques of compositional analysis such as those employed in the examination of archaeological ceramics do not provide absolute values but rather an estimate of the concentrations of the elements in the ceramics. The analyst aims to get these as close to absolute values as possible, but realism dictates that maintaining consistency should be the primary aim, achievable by the use of quality control standards. Fuller explanations of all these aspects are given by Pollard ( 2007 )."
+              }
+            ],
+            "retrieval_details": {
+              "document_retrieval_strategy": "untrained"
+            },
+            "session_token": "1_UOpAhwTlqva1y8W2_2zIcZ2opR"
+          }
+        },
+        "system": {
+          "state": "eyJzZXNzaW9uX2lkIjoiMmM0Njg3MTAtYjdmZS00M2YxLTkxYWMtM2ZiZmI1NTJiYjIzIiwic2tpbGxfcmVmZXJlbmNlIjoibWFpbiBza2lsbCIsImFzc2lzdGFudF9pZCI6IjNmM2U1NGU3LTFjOTItNGQ3Mi1hYmQ1LWVhY2MxZmU5ODNlMSIsImluaXRpYWxpemVkIjp0cnVlLCJkaWFsb2dfc3RhY2siOlt7ImRpYWxvZ19ub2RlIjoicm9vdCJ9XSwiX25vZGVfb3V0cHV0X21hcCI6eyJyZXNwb25zZV8xMF8xNjAwNDM1NTQyMTc4Ijp7IjAiOlswXX19fQ=="
+        }
+      }
+    }
+  }
+}

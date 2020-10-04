@@ -61,7 +61,6 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-
 # Flask stuff:
 instance/
 .webassets-cache
@@ -145,6 +144,8 @@ cython_debug/
 !.vscode/extensions.json
 *.code-workspace
 .vscode/
+
+.DS_Store
 
 # Local History for Visual Studio Code
 .history/

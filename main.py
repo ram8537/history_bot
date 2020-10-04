@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def react():
+    print(request.get_json())
     message = str(request.get_json()['message'])
 
     authenticator = IAMAuthenticator(os.environ['WATSON_ASSISTANT_API_KEY'])
@@ -28,9 +29,9 @@ def react():
             'text': message
         }).get_result()
 
+    print(response)
     try:
         list_of_responses = []
-        print("sending filtered message")
         filtered_response = response['output']['user_defined']['personal_api']['watson_response']
         passage_list = filtered_response['passages']
 
@@ -49,25 +50,26 @@ def react():
             'type': 'filtered_response',
             'message': full_response
         }
+        print("sending filtered message")
         return jsonify(reply), 200
 
     except KeyError:
         try:
-            print("sending prepared response")
             basic_response = response['output']['generic'][0]['text']
             reply = {
                 'type': 'basic_response',
                 'message': basic_response
             }
+            print("sending prepared response")
             return jsonify(reply), 200
 
         except IndexError:
-            print("caught at intent")
-            message = "caught at intent"
+            message = "sorry but there seems to be a problem"
             reply = {
                 'type': 'error_response',
                 'message': message
             }
+            print("caught at intent")
             return jsonify(reply), 200
 
 
@@ -76,7 +78,7 @@ def assistant_discovery():
     assistant_payload = request.get_json()
     message = assistant_payload['assistant_message']
 
-    print(assistant_payload)
+    print("(assistant discovery hook), assistant's message payload:", assistant_payload)
 
     authenticator = IAMAuthenticator(os.environ["WATSON_DISCOVERY_API_KEY"])
     discovery = DiscoveryV1(
@@ -117,8 +119,8 @@ def assistant_discovery():
         return data
 
     except ApiException as ex:
-        print("Method failed with status code " +
-              str(ex.code) + ": " + ex.message)
+        print("(assistant-discovery webhook) error with watson assistant's response")
+        return "error with assistant-discovery hook", 400
 
 @app.route('/slack', methods=['POST'])
 def slack_deprecated():

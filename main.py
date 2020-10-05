@@ -162,15 +162,14 @@ def watson_call(content_text, content_response_url):
 
     try:
         filtered_response = response['output']['user_defined']['personal_api']['watson_response']
-        print(filtered_response)
+        print("(watson-assistant hook) filtered response:" filtered_response)
         passage_list = filtered_response['passages']
-        results_list = filtered_response['results']
         
         def slack_formatter_score(n):
             try:
                 score = n['passage_score']
             except KeyError:
-                score = n['result_metadata']['confidence']
+                score = "there seems to be a problem"
             slack_component_score = {
                 "type": "context",
                 "elements": [
@@ -186,9 +185,7 @@ def watson_call(content_text, content_response_url):
             try:
                 text = n['passage_text']
             except KeyError:
-                text = n['highlight']['text'][0]
-                text = text.replace("<em>", "_*")
-                text = text.replace("</em>", "*_")
+                text = "there seems to be a problem" 
             slack_component_text = {
                 "type": "section",
                 "text": {
@@ -202,24 +199,15 @@ def watson_call(content_text, content_response_url):
             "type": "header",
             "text": {
                 "type": "plain_text",
-                "text": "here are the top 3 results"
+                "text": "here are the most relevant results"
             }
         }
         divider = {
             "type": "divider"
         }
 
-        header_2 = {
-            "type": "header",
-            "text": {
-                "type": "plain_text",
-                "text": "expanded"
-            }
-        }
         formatted_passages_score = [slack_formatter_score(passage) for passage in passage_list]
         formatted_passages_text = [slack_formatter_text(passage) for passage in passage_list]
-        formatted_text_score = [slack_formatter_score(result) for result in results_list ]
-        formatted_text_text = [slack_formatter_text(result) for result in results_list ]
 
 
         ##combine everything
@@ -230,23 +218,16 @@ def watson_call(content_text, content_response_url):
             final_components_list.append(formatted_passages_text[i])
 
         final_components_list.append(divider)
-        final_components_list.append(header_2)
 
-        for i in range (len(formatted_text_score)):
-            final_components_list.append(formatted_text_score[i])
-            final_components_list.append(formatted_text_text[i])
 
 
         slack_message = {
             'blocks' : final_components_list
         } 
-        print("slack_message")
-        print(slack_message)
 
         requests.post(content_response_url, json=slack_message)
     
     except:
-        print("sending basic response")
         try:
             basic_response = response['output']['generic'][0]['text']
             basic_slack_message = {
@@ -261,6 +242,7 @@ def watson_call(content_text, content_response_url):
                     }
                 ]
             }
+            print("sending basic response")
             requests.post(content_response_url, json=basic_slack_message)
         except IndexError:
             basic_slack_message = {
@@ -337,7 +319,7 @@ def slack_detail_view_deprecated():
 
     try:
         slack_user_input = request.form.get('text')
-        print(slack_user_input)
+        print("(slack detail-view): slack user input:", slack_user_input)
         match = re.match("1\d{3}", slack_user_input)
         if match:
             item_to_search = match.group()

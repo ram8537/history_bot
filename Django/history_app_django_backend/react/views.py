@@ -14,7 +14,7 @@ from .serializers import ItemsSerializer, ReactFilteredResponseSerializer, FAQSe
 
 
 class ItemsListView(ListAPIView):
-    queryset = Items.objects.all()
+    queryset = Items.objects.all().order_by("item_number")
     serializer_class = ItemsSerializer
 
 

@@ -35,11 +35,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'history_app_django_backend.urls'
 
-#For Google Cloud Storage
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'history-assistant-slack.appspot.com'
-STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage' #allow "collectstatic" to automatically put files into bucket
-
 
 TEMPLATES = [
     {
@@ -61,7 +56,7 @@ WSGI_APPLICATION = 'history_app_django_backend.wsgi.application'
 
 
 # Database
-if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
+if os.getenv('GAE_APPLICATION', None):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
     DATABASES = {
@@ -119,7 +114,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

@@ -150,4 +150,5 @@ watson_api/
 *.pyc
 __pycache__/
 
-../cloud_sql_proxy
+Django/history_app_django_backend/cloud_sql_proxy
+

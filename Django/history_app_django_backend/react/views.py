@@ -1,5 +1,7 @@
 import os
+
 from django.contrib.auth.models import User
+from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
@@ -9,8 +11,10 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import Filters, Items, FAQ
-from .serializers import ItemsSerializer, ReactFilteredResponseSerializer, FAQSerializer
+
+from .models import FAQ, Filters, Items
+from .serializers import (FAQSerializer, ItemsSerializer,
+                          ReactFilteredResponseSerializer)
 
 
 class ItemsListView(ListAPIView):
@@ -100,7 +104,8 @@ class AssistantDiscovery(APIView):
             filter = obj.query_language_filter
             print("(assistant-discovery hook) using filter:", item_index, filter)
 
-        except (KeyError, NameError) as error:
+        except (KeyError, NameError, ObjectDoesNotExist ) as error:
+            print("(assistant-discovery hook) no filter, error is:", error)
             filter = None
 
         try:
@@ -122,7 +127,6 @@ class AssistantDiscovery(APIView):
                 "(assistant-discovery webhook) error with watson assistant's response", ex)
             return Response(status=status.HTTP_204_NO_CONTENT)
 
-        return Response()
 
 
 class FAQListView(ListAPIView):
